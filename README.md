@@ -48,6 +48,12 @@ The `dist` directory contains the bundled code that is pushed to Google Apps Scr
 
 ![Google Apps Script - Setup Development Environment](images/npm-install.gif)
 
+### Example Webapp
+
+Run `doGetExample` to serve `webapp-example.html`. It demonstrates calling a
+server function (`getGmailAliases`) from client-side code using
+`google.script.run`.
+
 ### The .claspignore file
 
 The `.claspignore` file allows you to specify file and directories that you do not wish to upload to your Google Apps Script project via `clasp push`.

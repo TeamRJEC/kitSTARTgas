@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <script>
+    function loadAliases() {
+      google.script.run.withSuccessHandler(function(aliases) {
+        const ul = document.getElementById('aliases');
+        aliases.forEach(function(a) {
+          var li = document.createElement('li');
+          li.textContent = a;
+          ul.appendChild(li);
+        });
+      }).getGmailAliases();
+    }
+  </script>
+</head>
+<body onload="loadAliases()">
+  <h1>Webapp Example</h1>
+  <p>The following Gmail aliases were retrieved on the server:</p>
+  <ul id="aliases"></ul>
+</body>
+</html>
