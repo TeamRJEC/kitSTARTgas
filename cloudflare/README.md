@@ -1,6 +1,6 @@
 # Cloudflare Worker
 
-This folder contains a sample Cloudflare Worker that responds with a greeting.
+This folder contains a sample Cloudflare Worker that serves a simple web page.
 
 ## Setup
 
@@ -13,10 +13,14 @@ This folder contains a sample Cloudflare Worker that responds with a greeting.
    wrangler login
    ```
 
-## Deploy
+## Deploy manually
 
 Run the following command inside this folder to deploy the worker:
 
 ```sh
 wrangler deploy
 ```
+
+## Automatic deployments
+
+The repository includes a GitHub Actions workflow that automatically deploys this worker whenever changes are pushed to the `main` branch. Create a `CLOUDFLARE_API_TOKEN` secret in your GitHub repository to enable automatic deployments.
