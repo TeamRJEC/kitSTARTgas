@@ -93,6 +93,11 @@ function notTestable() {
 
 Check out [jest 'expects' here](https://jestjs.io/docs/expect)
 
+## Cloudflare WebApp deployment
+
+The repository includes a `cloudflare` folder with a Worker that serves a simple web page. A GitHub Actions workflow deploys this Worker to Cloudflare automatically whenever changes are pushed to the `main` branch. Define a `CLOUDFLARE_API_TOKEN` secret in your GitHub repository to enable the deployment.
+
+
 ## :fire: Meet the Developer
 
 <img align="left" width="100" height="100" src="https://pbs.twimg.com/profile_images/1320276905271070727/zQUrdqxO_200x200.jpg">
